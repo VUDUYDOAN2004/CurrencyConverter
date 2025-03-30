@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="hint_amount">Nhập số tiền</string>
+    <string name="button_convert">Chuyển đổi</string>
+    <string name="exchange_rate">Tỷ giá: 1 USD = 23,185.00 VND</string>
+    <string name="result">Kết quả:</string>
+    <string name="error_input">Vui lòng nhập số tiền hợp lệ!</string>
+
+</resources>

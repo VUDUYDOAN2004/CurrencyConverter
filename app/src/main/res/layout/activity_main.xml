@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Spinner chọn tiền tệ nguồn -->
+    <Spinner
+        android:id="@+id/fromCurrencySpinner"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Spinner chọn tiền tệ đích -->
+
+    <!-- TextView hiển thị tỷ giá -->
+    <Spinner
+        android:id="@+id/toCurrencySpinner"
+        android:layout_width="406dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="28dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fromCurrencySpinner" />
+
+    <TextView
+        android:id="@+id/exchangeRateText"
+        android:layout_width="251dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/exchange_rate"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toCurrencySpinner" />
+
+    <!-- EditText nhập số tiền -->
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="359dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="money"
+        android:hint="@string/hint_amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchangeRateText" />
+
+    <!-- Button chuyển đổi -->
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="164dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountInput" />
+
+    <!-- TextView hiển thị kết quả -->
+    <TextView
+        android:id="@+id/resultOutput"
+        android:layout_width="366dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/result"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/convertButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
