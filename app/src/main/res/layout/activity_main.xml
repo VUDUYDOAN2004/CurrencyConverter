@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Spinner chọn tiền tệ nguồn -->
+    <!-- chọn tiền tệ nguồn -->
     <Spinner
         android:id="@+id/fromCurrencySpinner"
         android:layout_width="410dp"
@@ -19,9 +19,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Spinner chọn tiền tệ đích -->
+    <!-- chọn tiền tệ muốn quy đổi  -->
 
-    <!-- TextView hiển thị tỷ giá -->
+    <!-- hiển thị tỷ giá -->
     <Spinner
         android:id="@+id/toCurrencySpinner"
         android:layout_width="406dp"
@@ -44,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toCurrencySpinner" />
 
-    <!-- EditText nhập số tiền -->
+    <!-- nhập số tiền -->
     <EditText
         android:id="@+id/amountInput"
         android:layout_width="359dp"
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/exchangeRateText" />
 
-    <!-- Button chuyển đổi -->
+    <!-- chuyển đổi tiền -->
     <Button
         android:id="@+id/convertButton"
         android:layout_width="164dp"
@@ -70,7 +70,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/amountInput" />
 
-    <!-- TextView hiển thị kết quả -->
+    <!-- hiển thị kết quả -->
     <TextView
         android:id="@+id/resultOutput"
         android:layout_width="366dp"
